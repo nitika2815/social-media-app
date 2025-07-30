@@ -21,7 +21,7 @@ console.log(currentUser);
   return (
     <div className='navbar'>
       <div className='left'>
-        <Link to="#" style={{textDecoration:"none"}}>
+        <Link to="/" style={{textDecoration:"none"}}>
         <span>lamasocial</span>
         </Link>
         <HomeOutlinedIcon/>

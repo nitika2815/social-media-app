@@ -1,13 +1,38 @@
+@import "../../style.scss";
 .stories{
     display: flex;
     gap: 10px;
     height: 250px;
     margin-bottom: 30px;
+
+    @include mobile{
+      height: 50px;
+      justify-content: space-between;
+      margin-bottom: 10px;
+      margin-top: 10px;
+    }
+    @include tablet{
+     height: 150px; 
+     gap: 20px;
+    }
+    @include ford{
+      margin-bottom: -86px;
+     }
   .story{
     flex: 1;
     border-radius: 10px;
     overflow: hidden;
     position: relative;
+    @include mobile{
+      height: 50px;
+      width: 50px;
+      flex: none;
+      border-radius: 50%;
+      object-fit: cover;
+    }
+    @include tablet{
+      
+    }
     img{
       width: 100%;
       height: 100%;;
@@ -19,6 +44,9 @@
       left: 10px;
       color: white;
       font-weight: 500;
+      @include mobile{
+        display: none;
+      }
     }
     button{
       position: absolute;
@@ -36,6 +64,15 @@
       display: flex;
       align-items: center;
       justify-content: center;
+      @include mobile{
+        position: absolute;
+        border-radius: 50%;
+        left: 0px;
+        right: 0px;
+        top: 0px;
+        bottom: 0px;
+        margin: auto;
+      }
     }
   }
 }
